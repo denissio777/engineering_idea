@@ -18,7 +18,7 @@
                         <div class="card-body">
                             <p class="card-text" style="background-color: #E9ECEF; text-align: center;">{{$post->body ?? ''}}</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">{{ Carbon\Carbon::parse($post->updated_at)->format('d.m.Y H:m') }}</small>
+                                <small class="text-muted">{{ Carbon\Carbon::parse($post->updated_at)->format('d.m.Y H:i') }}</small>
                                 <small class="text-muted">{{$post->author ?? ''}}</small>
                             </div>
                         </div>
